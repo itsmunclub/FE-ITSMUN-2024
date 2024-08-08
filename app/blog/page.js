@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './blog.module.css'
 import Sidebar from '../components/Sidebar'
+import Footer from '../components/Footer'
 
 const BlogPage = () => {
   return (
@@ -14,7 +15,7 @@ const BlogPage = () => {
         <p><span className={styles.span}>Technology</span> leading</p>
         <p className="font-Inter">MUN organization</p>  
       </div>
-      
+      <Footer/>
     </>
     
   )

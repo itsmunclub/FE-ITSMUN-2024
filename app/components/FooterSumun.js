@@ -1,15 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
 
-const Footer = () => {
+const FooterSumun = () => {
   return (
-    <div className="bg-MUN-englishViolet max-w-360 w-full sm:max-h-[242px] md:py-[60px] md:px-[100px] sm:py-9 sm:px-11 py-7 px-8 px-">
+    <div className="bg-white bg-opacity-50 max-w-360 w-full sm:max-h-[242px] md:py-[60px] md:px-[100px] sm:py-9 sm:px-11 py-7 px-8 px-">
       <div className="containerr w-full h-full m-auto">
         <div className="content flex sm:flex-row flex-col h-full justify-around gap-2">
           <div className="2sm:self-center">
             <img className="items-center w-auto h-auto" src="/footerLogo.svg" alt="Footer Logo"/>
           </div>
-          <div className="flex flex-col font-montserrat lg:text-xl text-lg lg:justify-around sm:justify-center justify-around sm:text-center text-left text-MUN-sidebar-linen gap-2">
+          <div className="flex flex-col font-montserrat lg:text-xl text-lg lg:justify-around sm:justify-center justify-around sm:text-center text-left text-MUN-englishViolet gap-2">
             <Link href="/" className="">
               Home
             </Link>
@@ -20,7 +20,7 @@ const Footer = () => {
               Events
             </Link>
           </div>
-          <div className="flex flex-col font-montserrat lg:text-xl text-lg lg:justify-around sm:justify-center justify-around sm:text-center text-left text-MUN-sidebar-linen gap-2">
+          <div className="flex flex-col font-montserrat lg:text-xl text-lg lg:justify-around sm:justify-center justify-around sm:text-center text-left text-MUN-englishViolet gap-2">
             <Link href="/aboutUs" className="">
               About Us
             </Link>
@@ -68,4 +68,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default FooterSumun
