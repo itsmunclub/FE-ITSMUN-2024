@@ -10,7 +10,7 @@ const EventPage = async () => {
     return (
         <>
             <Sidebar/>
-            <div className='ml-24 px-8'>
+            <div className='layout'>
                 <h1>This is Event Page</h1> 
                 <p>{new Date().toLocaleTimeString()}</p>
                 <ul>

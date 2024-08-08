@@ -6,7 +6,7 @@ const BlogPage = () => {
   return (
     <>
       <Sidebar/>
-      <div className='ml-24 px-8'>
+      <div className='layout'>
         <h1 id={styles.title}>This is blog page</h1>
         <p>Boost your <span className={styles.span}>public </span></p>
         <p><span className={styles.span}>speaking</span> skills in <span className={styles.span}>Sepuluh</span></p>
