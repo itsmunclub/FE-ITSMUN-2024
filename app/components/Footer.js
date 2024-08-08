@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <div className="bg-MUN-englishViolet py-[60px] px-[115px]">
-      <div className="containerr max-w-360 w-full h-full m-auto">
+    <div className="fixed bg-MUN-englishViolet max-w-360 w-full max-h-[242px] py-[60px] px-[115px]">
+      <div className="containerr w-full h-full m-auto">
         <div className="content flex flex-row h-full">
-          <img className="items-center" src="/PPfooter.svg" alt="Footer Logo"/>
+          <img className="items-center" src="/footerLogo.svg" alt="Footer Logo"/>
           <Link href="/home" className="">
             Home
           </Link>
