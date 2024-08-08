@@ -52,7 +52,12 @@ module.exports = {
         'max-2xl': { 'max': '1536px'},
       },
       fontFamily: {
-        spritz: ['SpritzAndDelicious']
+        spritz: ['SpritzAndDelicious'],
+        monolisa: ['MonoLisa'],
+        monolisabold: ['MonoLisaBold'],
+        montserrat: ['var(--font-montserrat)', 'sans-serif'],
+        inter: ['var(--font-inter)', 'sans-serif'],
+        frankRuhlLibre: ['var(--font-frank-ruhl-libre)', 'serif'],
       },
     },
   },
