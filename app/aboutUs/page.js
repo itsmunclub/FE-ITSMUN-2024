@@ -5,7 +5,7 @@ const AboutUsPage = () => {
   return (
     <>
         <Sidebar/>
-        <div className='layout'>
+        <div className=" font-spritz bg-MUN-burntSienna">
             <h1>this is about us page</h1>
         </div>
     </>

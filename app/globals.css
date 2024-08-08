@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --font-montserrat: 'Montserrat', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-frank-ruhl-libre: 'Frank Ruhl Libre', serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,6 +17,27 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+}
+
+@font-face {
+  font-family: 'SpritzAndDelicious';
+  src: url('/fonts/SpritzAndDelicious.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MonoLisa';
+  src: url('/fonts/MonoLisaRegular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MonoLisaBold';
+  src: url('/fonts/MonoLisaBold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 
