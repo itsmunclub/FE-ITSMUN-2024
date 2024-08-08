@@ -40,6 +40,18 @@
   font-style: normal;
 }
 
+@layer base {
+  .font-outline-1-purple {
+    -webkit-text-stroke: 1px #53405F;
+  }
+  .font-outline-none{
+    -webkit-text-stroke: 0px;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px black;
+  }
+}
+
 
 /* Presentational styles */
 body {

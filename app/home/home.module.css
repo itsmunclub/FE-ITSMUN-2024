@@ -1,15 +1,13 @@
-#title{
-    color: aqua;
-    background: #000;
-}
 .span {
     position: relative;
     text-decoration: none;
     cursor: default;
+    -webkit-text-stroke: 1px #53405F;
+    color: white;
   }
   
 .span::before {
-    background: hsl(45 100% 70%);
+    background: #FFB600;
     content: "";
     inset: 0;
     position: absolute;
@@ -17,9 +15,20 @@
     transform-origin: right;
     transition: transform 0.25s ease-in-out;
     z-index: -1;
+    -webkit-text-stroke: 0px;
 }
   
 .span:hover::before {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+.span:hover {
+    color:black;
+    -webkit-text-stroke: 0px;
+}
+
+.bgPaper {
+    background-image: url('/paperHome.svg'), url('/dustHome.svg');
+    height: max-content;
 }
