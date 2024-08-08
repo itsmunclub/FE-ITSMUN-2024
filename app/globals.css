@@ -40,17 +40,23 @@
   font-style: normal;
 }
 
+@layer base {
+  .font-outline-1-purple {
+    -webkit-text-stroke: 1px #53405F;
+  }
+  .font-outline-none{
+    -webkit-text-stroke: 0px;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 4px black;
+  }
+}
+
 
 /* Presentational styles */
-/* body {
-  font-family: system-ui, sans;
-  font-size: 3.5rem;
-  font-weight: 800;
-} */
-
-/* body {
-  font-family: var(--font-montserrat);
-} */
+body {
+  background: #F3E1D1;
+}
 
 main {
   display: grid;
