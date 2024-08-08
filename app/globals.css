@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+span {
+  color: #000;
+  position: relative;
+  text-decoration: none;
+  cursor: default;
+}
+
+span::before {
+  background: hsl(45 100% 70%);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.25s ease-in-out;
+  z-index: -1;
+}
+
+span:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Presentational styles */
+body {
+  font-family: system-ui, sans;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+main {
+  display: grid;
+  height: 100vh;
+  padding: 24px;
+  /* place-items: center; */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
