@@ -43,6 +43,7 @@ module.exports = {
         },
       },
       screens: {
+        '2sm': { 'min': '400px'},
         'max-2sm': { 'max': '400px'},
         'max-sm': { 'max': '640px' },
         'max-md': { 'max': '768px' },

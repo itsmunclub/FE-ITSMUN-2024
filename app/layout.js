@@ -1,9 +1,9 @@
 import "./globals.css";
 import { Montserrat, Inter, Frank_Ruhl_Libre } from 'next/font/google';
 
-const montserrat = Montserrat({ subsets: ['latin'], variable: '--font-montserrat' });
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
-const frankRuhlLibre = Frank_Ruhl_Libre({ subsets: ['latin'], variable: '--font-frank-ruhl-libre' });
+const montserrat = Montserrat({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'] });
+const frankRuhlLibre = Frank_Ruhl_Libre({ subsets: ['latin'] });
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} ${inter.className} ${frankRuhlLibre.className}`}>
+      <body suppressHydrationWarning={true} className={`${montserrat.className} ${inter.className} ${frankRuhlLibre.className}`}>
         {children}
       </body>
     </html>
