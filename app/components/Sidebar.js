@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Sidebar = () => {
   return (
-    <div className='fixed z-50 flex flex-col justify-between bg-MUN-englishViolet w-fit h-[700px] p-5 rounded-3xl'>
+    <div className='fixed z-50 flex flex-col justify-between bg-MUN-englishViolet w-fit h-[95%] p-5 rounded-3xl m-5 '>
       <div className='flex flex-col gap-5'>
         <Image
           src="/munLogo.svg"
