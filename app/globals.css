@@ -19,9 +19,7 @@
 
 /* Presentational styles */
 body {
-  font-family: system-ui, sans;
-  font-size: 3.5rem;
-  font-weight: 800;
+  background: #F3E1D1;
 }
 
 main {

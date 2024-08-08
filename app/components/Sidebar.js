@@ -24,7 +24,7 @@ const Sidebar = () => {
       </div>
       <div className='flex flex-col gap-5'>
         <button className='Home'>
-          <Link href="/">
+          <Link href="/home">
             <div className="group flex bg-MUN-sidebar-linen rounded-full w-16 h-16 justify-center items-center hover:bg-MUN-beigeBanner p-5">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path className=" group-hover:fill-MUN-bg-purple-dark" fillRule="evenodd" clipRule="evenodd" d="M10.2856 0.5H13.7142V3.92857H10.2856V0.5ZM13.7142 21.0716H24V24.5001H0V21.0716H10.2856V14.2147H13.7142V21.0716ZM17.1429 3.92844H13.7144V7.35701H17.1429V3.92844ZM17.143 7.35734H20.5715V10.7853H23.9999V21.071H20.5713V10.7859H17.143V7.35734ZM6.85703 3.92844H10.2856V7.35701H6.85703V3.92844ZM6.85728 7.35734H3.42871V10.7859H6.85728V7.35734ZM0 10.7853H3.42857V21.071H0V10.7853Z" fill="#53405F"/>
