@@ -49,7 +49,6 @@ body {
 main {
   display: grid;
   height: 100vh;
-  padding: 24px;
   /* place-items: center; */
 }
 
