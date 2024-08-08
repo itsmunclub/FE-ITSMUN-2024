@@ -16,32 +16,11 @@
   }
 }
 
-span {
-  color: #000;
-  position: relative;
-  text-decoration: none;
-  cursor: default;
-}
-
-span::before {
-  background: hsl(45 100% 70%);
-  content: "";
-  inset: 0;
-  position: absolute;
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.25s ease-in-out;
-  z-index: -1;
-}
-
-span:hover::before {
-  transform: scaleX(1);
-  transform-origin: left;
-}
 
 /* Presentational styles */
 body {
   font-family: system-ui, sans;
+  padding: 1rem;
   font-size: 3.5rem;
   font-weight: 800;
 }
