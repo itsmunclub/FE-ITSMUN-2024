@@ -4,7 +4,7 @@ const HallOfFamePage = () => {
   return (
     <>
         <Sidebar/>
-        <div className='ml-24 px-8'>
+        <div className='layout'>
             <h1>HallOfFamePage</h1> 
         </div>
     </>
