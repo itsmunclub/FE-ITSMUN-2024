@@ -51,6 +51,9 @@ module.exports = {
         'max-xl': { 'max': '1280px' },
         'max-2xl': { 'max': '1536px'},
       },
+      fontFamily: {
+        spritz: ['SpritzAndDelicious']
+      },
     },
   },
   plugins: [],

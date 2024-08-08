@@ -16,6 +16,13 @@
   }
 }
 
+@font-face {
+  font-family: 'SpritzAndDelicious';
+  src: url('/fonts/SpritzAndDelicious.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 /* Presentational styles */
 body {
