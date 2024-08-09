@@ -65,9 +65,23 @@ main {
 }
 
 .layout {
-  margin-left: 6rem /* 96px */;
-  padding-left: 3rem /* 48px */;
-  padding-right: 3rem /* 48px */;
+    margin-left: 6rem /* 96px */ !important;;
+    padding-left: 3rem /* 48px */ !important;;
+    padding-right: 3rem /* 48px */ !important;;
+}
+
+@media screen and (max-width: 769px) {
+  .layout {
+    padding-left: 4rem /* 48px */ !important;;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .layout {
+    margin-left: 1rem /* 96px */ !important;;
+    padding-left: 1rem /* 48px */ !important;;
+    padding-right: 1rem /* 48px */ !important;;
+  }
 }
 
 @layer utilities {

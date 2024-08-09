@@ -8,3 +8,7 @@
 .bgAll {
     background-color: #87B99B;
 }
+
+.text-3 {
+    flex-basis: 358px;
+}
