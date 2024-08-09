@@ -1,4 +1,10 @@
 .bgHero {
     background-image: url('/sumunHero.svg');
-    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.bgAll {
+    background-color: #87B99B;
 }
