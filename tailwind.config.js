@@ -50,6 +50,7 @@ module.exports = {
         'max-lg': { 'max': '1024px' },
         'max-2lg': { 'max': '1023px' },
         'max-xl': { 'max': '1280px' },
+        'xxl': { 'min': '1300px'},
         'max-2xl': { 'max': '1536px'},
       },
       fontFamily: {
@@ -59,6 +60,24 @@ module.exports = {
         montserrat: ['var(--font-montserrat)', 'sans-serif'],
         inter: ['var(--font-inter)', 'sans-serif'],
         frankRuhlLibre: ['var(--font-frank-ruhl-libre)', 'serif'],
+      },
+      animation: {
+        'infinite-scroll-left': 'infinite-scroll-left 20s linear infinite',
+        'infinite-scroll-right': 'infinite-scroll-right 20s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll-left': {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(calc(-50% - 20px))" },
+        },
+        'infinite-scroll-right': {
+          "0%": { transform: "translateX(calc(-50% - 10px))" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
+      rotate: {
+        '18.6': '18.6deg',
+        'min-15.4': '-15.4deg',
       },
     },
   },
