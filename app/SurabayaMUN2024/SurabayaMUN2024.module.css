@@ -9,6 +9,80 @@
     background-color: #87B99B;
 }
 
-.text-3 {
-    flex-basis: 358px;
+.text1 {
+    font-size: 14.9vw;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+.text2 {
+    font-size: 5.05vw;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text3 {
+    font-size: 3.4vw;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.sumunLine {
+    width: 62.9vw;
+    height: 3vw;
+    background-color: rgba(235, 145, 125, 0.7);
+    margin-top: -8.7vw; 
+}
+
+@media screen and (min-width: 769px) {
+    .text1 {
+        font-size: 11.55vw;
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .text2 {
+        font-size: 3.9vw;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .text3 {
+        font-size: 1.85vw;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .sumunLine {
+        width: 49vw;
+        height: 2.7vw;
+        background-color: rgba(235, 145, 125, 0.7);
+        margin-top: -7vw; 
+    }
+
+    .themeText {
+        font-size: 3vw;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-align: left;
+        line-height: 1.3;  
+        white-space: normal;
+    }
+  }
+
+  @media screen and (max-width: 769px) {
+    .text1 {
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .themeText {
+        font-size: 4vw;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+.tstay {
+    font-size: 4vw;
+}
+
+.council__paper {
+    background-image: url('/paperbglong.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+}
+    
