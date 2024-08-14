@@ -51,7 +51,7 @@ const Sidebar = () => {
           </Link>
         </button>
         <button>
-          <Link href="/aboutUs">
+          <Link href="/about-us">
             <div className="group flex bg-MUN-sidebar-linen rounded-full w-14 h-14 justify-center items-center hover:bg-MUN-beigeBanner p-3">
             <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path className=" group-hover:fill-MUN-bg-purple-dark" fillRule="evenodd" clipRule="evenodd" d="M6.75 0.5H3.75V2H2.25V6.5L3.75 6.5V8H6.75V6.5H3.75V2H6.75V0.5ZM14.25 0.5H9.75V2H8.25V6.5L9.75 6.5V8H14.25V6.5L15.75 6.5V2H14.25V0.5ZM14.25 2V6.5H9.75V2H14.25ZM7.5 11V14H16.5V11H18V15.5H16.5H7.5H6V11H7.5ZM7.5 11V9.5H16.5V11H7.5ZM17.25 0.5H20.25V2H17.25V0.5ZM20.25 6.5V2H21.75V6.5L20.25 6.5ZM20.25 6.5V8H17.25V6.5H20.25ZM24 11H22.5V9.5H19.5V11H22.5V14H19.5V15.5H24V14V11ZM0 11H1.5V14H4.5V15.5H0V14V11ZM1.5 11V9.5H4.5V11H1.5Z" fill="#53405F"/>
