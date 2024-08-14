@@ -6,7 +6,7 @@ import FooterSumun from '../components/FooterSumun'
 const Sumun = () => {
   return (
       <div className={`${styles.bgAll}`}>
-        <div className="bg-[url('/sumunHero.svg')] bg-cover xl:bg-cover md:bg-center bg-left bg-no-repeat hero flex flex-col md:pl-36 md:pr-12 sm:pl-14 pl-8 pr-4">
+        <div className="bg-[url('/sumun/sumunHero.svg')] bg-cover xl:bg-cover md:bg-center bg-left bg-no-repeat hero flex flex-col md:pl-36 md:pr-12 sm:pl-14 pl-8 pr-4">
           <div className="hero__content flex md:h-[560px] lg:h-[750px] xl:h-[930px] xxl:h-[1050px] h-screen">
             <div className="content__main flex flex-row">
               <div className="content__text md:pt-[68px] md:pl-5 pt-[45px] flex flex-shrink flex-col w-auto h-auto">
@@ -20,7 +20,7 @@ const Sumun = () => {
                   </div>
                   <div className="h-auto w-auto">
                     <Image
-                      src="/sumunLogo.svg"
+                      src="/sumun/sumunLogo.svg"
                       alt="sumun logo"
                       height={163}
                       width={163}
@@ -35,12 +35,12 @@ const Sumun = () => {
             </div>
           </div>
         </div>
-        <div className="body bg-[url('/bgBodySumun.svg')] bg-cover">
+        <div className="body bg-[url('/sumun/bgBodySumun.svg')] bg-cover">
           <div className="h-auto">
             <div className="layout body__theme flex flex-col md:pt-12 pt-8 gap-4 pb-4">
               <div className="theme__title h-auto w-auto self-center">
                 <Image
-                  src="/themeTitle.svg"
+                  src="/sumun/themeTitle.svg"
                   alt="grand-theme"
                   height={77}
                   width={442}
@@ -53,7 +53,7 @@ const Sumun = () => {
                 </div>
                 <div className="h-auto w-auto md:w-1/2 flex items-center justify-center">
                   <Image
-                    src="/themePict.svg"
+                    src="/sumun/themePict.svg"
                     alt="sura&baya cutout"
                     height={511}
                     width={513}
@@ -66,7 +66,7 @@ const Sumun = () => {
               <div className="council__top flex flex-row md:pr-12 pr-2 justify-between gap-2">
                 <div className="council__hand h-auto w-auto self-center">
                   <Image
-                    src="/bodyHands.svg"
+                    src="/sumun/bodyHands.svg"
                     alt="bodyHands"
                     height={219}
                     width={529}
@@ -74,10 +74,11 @@ const Sumun = () => {
                   />
                 </div>
                 <div className="council__text animate__animated animate__fadeInDown self-center">
-                  <div className="flex flex-col h-auto w-auto gap-1">
+                  <div className="flex flex-col h-auto w-auto">
                     <p className={`${styles.tstay} text-white font-frankRuhlLibre font-black whitespace-nowrap`}>COUNCIL & TOPIC REVEAL</p>
-                    <p className={`${styles.tstay} text-white font-frankRuhlLibre font-black whitespace-nowrap`}>COUNCIL & TOPIC REVEAL</p>
-                    <p className={`${styles.tstay} text-white font-frankRuhlLibre font-black whitespace-nowrap`}>COUNCIL & TOPIC REVEAL</p>
+                    <p className={`${styles.tstay} ${styles.second} text-white font-frankRuhlLibre font-black whitespace-nowrap`}>COUNCIL & TOPIC REVEAL</p>
+                    <p className={`${styles.tstay} ${styles.third} text-white font-frankRuhlLibre font-black whitespace-nowrap`}>COUNCIL & TOPIC REVEAL</p>
+                    <p className={`${styles.tstay} ${styles.fourth} text-white font-frankRuhlLibre font-black whitespace-nowrap`}>COUNCIL & TOPIC REVEAL</p>
                   </div>
                 </div>
               </div>
@@ -122,7 +123,7 @@ const Sumun = () => {
                 <div className="clutterPaper h-auto w-auto flex justify-end mt-[-7vw] md:mt-[-3.5vw]">
                   <div className="h-auto w-[60vw] xxl:w-[50vw]">
                     <Image
-                      src="/paperClutter.svg"
+                      src="/sumun/paperClutter.svg"
                       alt="paper clutter"
                       height={415}
                       width={779}
@@ -134,7 +135,7 @@ const Sumun = () => {
                   <div className="layout flex flex-col md:gap-20 lg:gap-7">
                     <div className="h-auto w-auto flex justify-center xl:mt-28">
                       <Image
-                        src="/HAMDALAHUNEP.png"
+                        src="/sumun/HAMDALAHUNEP.png"
                         alt="unep"
                         height={1180}
                         width={826}
@@ -143,7 +144,7 @@ const Sumun = () => {
                     </div>
                     <div className="h-auto w-auto flex justify-center xl:mt-16 xxl:mt-32">
                       <Image
-                        src="/finallyunesco.png"
+                        src="/sumun/finallyunesco.png"
                         alt="unesco"
                         height={1118}
                         width={1035}
@@ -152,7 +153,7 @@ const Sumun = () => {
                     </div>
                     <div className="h-auto w-auto flex justify-center xl:mt-28 md:mt-1 mt-none mt-10 xxl:mt-52">
                       <Image
-                        src="/HAMDALAH-UNCSTD.png"
+                        src="/sumun/HAMDALAH-UNCSTD.png"
                         alt="uncstd"
                         height={994}
                         width={749}
@@ -161,7 +162,7 @@ const Sumun = () => {
                     </div>
                     <div className="h-auto w-auto flex justify-center xl:mt-24 md:mt-1 mt-6 xxl:mt-52">
                       <Image
-                        src="/HAMDALAHUNTOURISM.png"
+                        src="/sumun/HAMDALAHUNTOURISM.png"
                         alt="untourism"
                         height={1115}
                         width={779}
@@ -205,7 +206,7 @@ const texts = [
   { word: "OUR COUNCIL & TOPIC"},
   { word: "OUR COUNCIL & TOPIC"},
   { word: "OUR COUNCIL & TOPIC"},
-  {  word: "OUR COUNCIL & TOPIC"},
+  { word: "OUR COUNCIL & TOPIC"},
 ];
 
 const texts2 = [
@@ -222,8 +223,8 @@ const texts2 = [
 ];
 
 const images = [
-  { src: "/unepCarousel.svg", alt: "UNEP" },
-  { src: "/unescoCarousel.svg", alt: "UNESCO" },
-  { src: "/uncstdCarousel.svg", alt: "UNCSTD" },
-  { src: "/untourismCarousel.svg", alt: "UNTourism" },
+  { src: "/sumun/unepCarousel.svg", alt: "UNEP" },
+  { src: "/sumun/unescoCarousel.svg", alt: "UNESCO" },
+  { src: "/sumun/uncstdCarousel.svg", alt: "UNCSTD" },
+  { src: "/sumun/untourismCarousel.svg", alt: "UNTourism" },
 ];
