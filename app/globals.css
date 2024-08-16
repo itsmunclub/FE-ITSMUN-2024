@@ -84,6 +84,26 @@ main {
   }
 }
 
+.layout-about {
+  margin-left: 6rem /* 96px */ !important;;
+  padding-left: 5rem /* 48px */ !important;;
+  padding-right: 4rem /* 48px */ !important;;
+}
+
+@media screen and (max-width: 769px) {
+.layout-about {
+  padding-left: 4rem /* 48px */ !important;;
+}
+}
+
+@media screen and (max-width: 426px) {
+.layout-about {
+  margin-left: 1rem /* 96px */ !important;;
+  padding-left: 1rem /* 48px */ !important;;
+  padding-right: 1rem /* 48px */ !important;;
+}
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

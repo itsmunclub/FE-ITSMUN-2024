@@ -1,0 +1,13 @@
+.bgPaper {
+    background-image: url('/aboutus/bgpaper.svg'), url('/aboutus/bgDust.svg');
+}
+
+.bgGT {
+    background-image: url('/aboutus/GTsection.svg');
+}
+
+.logoText {
+    color: white;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #8D314D;
+}
