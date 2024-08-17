@@ -2,22 +2,27 @@ import React from 'react'
 import styles from './blog.module.css'
 import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
+import Image from 'next/image'
+import Aos from '../components/Aos'
 
 const BlogPage = () => {
   return (
-    <>
+    <Aos>
       <Sidebar/>
-      <div className='ml-24 px-8'>
-        <h1 id={styles.title}>This is blog page</h1>
-        <p>Boost your <span className={styles.span}>public </span></p>
-        <p><span className={styles.span}>speaking</span> skills in <span className={styles.span}>Sepuluh</span></p>
-        <p><span className={styles.span}>Nopember Institute of</span></p>
-        <p><span className={styles.span}>Technology</span> leading</p>
-        <p className="font-Inter">MUN organization</p>  
+      <div className={`${styles.bgPaper}`}>
+        <div className="layout">
+          <div data-aos="flip-right" className="h-auto w-auto flex justify-center items-center py-[3vw]">
+          <Image
+            src="/WIP.svg"
+            alt="work in progress"
+            height={573}
+            width={472}
+          />
+          </div>
+        </div>
       </div>
       <Footer/>
-    </>
-    
+    </Aos>
   )
 }
 

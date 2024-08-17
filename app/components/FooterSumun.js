@@ -10,7 +10,7 @@ const FooterSumun = () => {
             <img className="items-center w-auto h-auto" src="/footerLogo.svg" alt="Footer Logo"/>
           </div>
           <div className="flex flex-col font-montserrat lg:text-xl text-lg lg:justify-around sm:justify-center justify-around sm:text-center text-left text-MUN-englishViolet gap-2">
-            <Link href="/" className="">
+            <Link href="/home" className="">
               Home
             </Link>
             <Link href="/blog" className="">
@@ -21,7 +21,7 @@ const FooterSumun = () => {
             </Link>
           </div>
           <div className="flex flex-col font-montserrat lg:text-xl text-lg lg:justify-around sm:justify-center justify-around sm:text-center text-left text-MUN-englishViolet gap-2">
-            <Link href="/aboutUs" className="">
+            <Link href="/about-us" className="">
               About Us
             </Link>
             <Link href="/hall-of-fame" className="">

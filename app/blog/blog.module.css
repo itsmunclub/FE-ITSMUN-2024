@@ -1,3 +1,7 @@
+.bgPaper {
+    background-image: url('/blog/paper.svg'), url('/blog/dust.svg');
+}
+
 #title{
     color: aqua;
     background: #000;
