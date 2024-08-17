@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const FooterSumun = () => {
   return (
-    <div className="bg-white bg-opacity-50 max-w-360 w-full sm:max-h-[242px] md:py-[60px] md:px-[100px] sm:py-9 sm:px-11 py-7 px-8 px-">
+    <div className="bg-white bg-opacity-50 max-w-360 w-full sm:max-h-[242px] md:py-[60px] md:px-[100px] sm:py-9 sm:px-11 py-7 px-8 mt-[20vw] md:mt-0">
       <div className="containerr w-full h-full m-auto">
         <div className="content flex sm:flex-row flex-col h-full justify-around gap-2">
           <div className="2sm:self-center">
