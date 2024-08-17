@@ -27,9 +27,13 @@ const Home = () => {
                             </p>
                             <p className='font-montserrat'>MUN organization</p>   
                         </div>     
-                        <button className="content__btn w-fit cursor-pointer font-montserrat font-ex my-1 bg-transparent border border-black rounded-full px-8 py-1 text-2xl text-black hover:bg-black hover:text-white" type="button">
+                        <div className={styles['button-container-2']}>
+                            <span className={`${styles.mas} font-montserrat`}>Register Here</span>
+                            <button className={`${styles.button} font-montserrat`} type="button" name="Hover">Register Here</button>
+                        </div>
+                        {/* <button className="content__btn w-fit cursor-pointer font-montserrat font-ex my-1 bg-transparent border border-black rounded-full px-8 py-1 text-2xl text-black hover:bg-black hover:text-white" type="button">
                             Register Here
-                        </button>
+                        </button> */}
                     </div>
                     <div className="content__img h-[600px] w-[580px] relative mt-3">
                         <Image
