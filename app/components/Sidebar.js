@@ -6,12 +6,15 @@ const Sidebar = () => {
   return (
     <div className='fixed z-50 flex flex-col justify-between bg-MUN-englishViolet w-fit h-[95%] px-5 py-10 rounded-3xl m-5 '>
       <div className='flex flex-col gap-5 items-center'>
-        <Image
-          src="/munLogo.svg"
-          width={64}
-          height={57}
-          alt="MUN Logo"
-        />
+        <Link href="/">
+          <Image
+            src="/munLogo.svg"
+            width={64}
+            height={57}
+            alt="MUN Logo"
+            className="cursor-pointer"
+          />
+        </Link>
         <button className='Hall-Of-Fame'>
           <Link href="/hall-of-fame">
             <div className="group flex bg-MUN-sidebar-linen rounded-full w-14 h-14 justify-center items-center hover:bg-MUN-beigeBanner p-3">

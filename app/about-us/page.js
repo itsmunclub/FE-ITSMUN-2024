@@ -3,24 +3,26 @@ import Sidebar from '../components/Sidebar'
 import styles from './aboutus.module.css'
 import Image from 'next/image'
 import Footer from '../components/Footer'
+import Aos from '../components/Aos'
 
 const AboutUsPage = () => {
   return (
-    <>
-        
+    <Aos>
+      <Sidebar/>
         <div className={`${styles.bgPaper} bg-MUN-bg-light`}>
             <div className="flex flex-col justify-center">
               <div className="hero__section">
-                <div className="layout h-auto w-auto flex justify-center items-center py-[2vh]">
+                <div data-aos="flip-left" className="layout h-auto w-auto flex justify-center items-center py-[2vh]">
                   <Image
                     src="/aboutus/heroLogo.png"
                     alt="MUN-logo"
                     height={646}
                     width={729}
+                    data-aos="flip-left"
                   />
                 </div>
                 <div className="layout-about">
-                  <p className="font-montserrat text-MUN-englishViolet text-justify text-[3.3vw] md:text-[1.37vw] lg:text-[1.5vw] xl:text-[1.57vw] xxl:text-[1.61vw]">
+                  <p data-aos="fade-up" className="font-montserrat text-MUN-englishViolet text-justify text-[3.3vw] md:text-[1.37vw] lg:text-[1.5vw] xl:text-[1.57vw] xxl:text-[1.61vw]">
                     <span className="font-bold text-MUN-bg-purple-dark">
                       The Institut Teknologi Sepuluh Nopember Model United Nations Club (abbreviated ITS MUN Club)
                     </span> is a student organization led by dedicated undergraduates who have a keen interest in international relations and diplomacy.
@@ -28,7 +30,7 @@ const AboutUsPage = () => {
                 </div>
               </div>
               <div className="WWD__section">
-                <div className="layout-about hero__WWD mb-[5vw] md:mb-0">
+                <div data-aos="fade-up" className="layout-about hero__WWD mb-[5vw] md:mb-0">
                   <div className="flex flex-col md:flex-row w-full items-center">
                     <div className="flex justify-center items-center h-auto w-auto md:w-2/5">
                       <Image
@@ -50,7 +52,7 @@ const AboutUsPage = () => {
                   </div>
                 </div>
                 <div className="GT__WWD">
-                  <div className="bg-[url('/aboutus/GTsecsm.svg')] md:bg-[url('/aboutus/GTsection.svg')] bg-cover bg-center">
+                  <div data-aos="fade-right" className="bg-[url('/aboutus/GTsecsm.svg')] md:bg-[url('/aboutus/GTsection.svg')] bg-cover bg-center">
                     <div className="layout-about mt-[-3vw] h-[150vw] md:h-[49.8vw]">
                       <div className="flex flex-col md:flex-row pt-[4vw] justify-between w-full">
                         <div className="h-full md:w-1/2">
@@ -75,7 +77,7 @@ const AboutUsPage = () => {
                   </div>
                 </div>
                 <div className="JS__section">
-                  <div className="layout-about mt-[-1vw] md:mt-[-9vw]">
+                  <div data-aos="fade-right" className="layout-about mt-[-1vw] md:mt-[-9vw]">
                     <div className="flex flex-col md:flex-row justify-between w-full">
                       <div className="flex flex-col font-montserrat text-MUN-englishViolet justify-center items-center md:w-1/2 pr-4">
                         <h3 className="font-bold underline text-[5vw] md:text-[2vw] xl:text-[2.4vw] mb-2 text-left w-full">Joint Simulation</h3>
@@ -98,7 +100,7 @@ const AboutUsPage = () => {
                   </div>
                 </div>
                 <div className="GA__section">
-                  <div className="bg-[url('/aboutus/GAsecsm.svg')] md:bg-[url('/aboutus/GAsection.svg')] bg-cover bg-center">
+                  <div data-aos="fade-right" className="bg-[url('/aboutus/GAsecsm.svg')] md:bg-[url('/aboutus/GAsection.svg')] bg-cover bg-center">
                     <div className="layout-about h-[147vw] md:h-[44vw]">
                       <div className="flex flex-col md:flex-row pt-[5.5vw] justify-between w-full">
                         <div className="h-full md:w-1/2">
@@ -123,7 +125,7 @@ const AboutUsPage = () => {
                   </div>
                 </div>
                 <div className="CB__section">
-                  <div className="layout-about">
+                  <div data-aos="fade-right" className="layout-about">
                     <div className="flex flex-col md:flex-row justify-between w-full">
                       <div className="flex flex-col font-montserrat text-MUN-englishViolet justify-center items-center md:w-1/2 pr-4">
                         <h3 className="font-bold underline text-[5vw] md:text-[2vw] xl:text-[2.4vw] mb-2 text-left w-full">Club Bonding</h3>
@@ -145,7 +147,7 @@ const AboutUsPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="accomplishment__section mt-[5vw]">
+                <div data-aos="fade-down" className="accomplishment__section mt-[5vw]">
                   <div className="hero__section layout-about">
                     <div className="flex flex-col gap-[3vw] md:gap-[2vw]">
                       <div className="h-auto w-auto">
@@ -178,7 +180,7 @@ const AboutUsPage = () => {
             </div>
         </div>
         <Footer/>
-    </>
+    </Aos>
   )
 }
 
