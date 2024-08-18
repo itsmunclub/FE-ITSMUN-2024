@@ -1,0 +1,112 @@
+.span {
+    position: relative;
+    text-decoration: none;
+    cursor: default;
+    -webkit-text-stroke: 1px #53405F;
+    color: white;
+  }
+  
+.span::before {
+    background: #FFB600;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.25s ease-in-out;
+    z-index: -1;
+    -webkit-text-stroke: 0px;
+}
+  
+.span:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.span:hover {
+    color:#8D314D;
+    -webkit-text-stroke: 0px;
+}
+
+.bgPaper {
+    background-image: url('/paperHome.svg'), url('/dustHome.svg');
+    height: max-content;
+}
+
+/* register button */
+.button-container-2 {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7vh;
+    overflow: hidden;
+    border: 1px solid #000;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 1px;
+    border-radius: 8px;
+  }
+  
+  .button {
+    width: 101%;
+    height: 100%;
+    font-weight: bold;
+    font-size: 11px;
+    letter-spacing: 1px;
+    background: #000;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    background-image: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+    -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+    mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+    -webkit-mask-size: 3000% 100%;
+    mask-size: 3000% 100%;
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+    animation: ani2 0.7s steps(29) forwards;
+    transition: background 0.7s ease-in-out;
+  
+    &:hover {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+      animation: ani 0.7s steps(29) forwards;
+    }
+  }
+  
+  .mas {
+    position: absolute;
+    color: #000;
+    text-align: center;
+    width: 101%;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 17px;
+    overflow: hidden;
+  }
+  
+  @keyframes ani {
+    from {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+    to {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+  }
+  
+  @keyframes ani2 {
+    from {
+      -webkit-mask-position: 100% 0;
+      mask-position: 100% 0;
+    }
+    to {
+      -webkit-mask-position: 0 0;
+      mask-position: 0 0;
+    }
+  }
+  
