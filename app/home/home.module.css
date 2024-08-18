@@ -1,3 +1,8 @@
+.country{
+  -webkit-text-stroke: 1px #603B28;
+  -webkit-font-smoothing: antialiased;
+}
+
 .span {
     position: relative;
     text-decoration: none;
@@ -30,7 +35,6 @@
 
 .bgPaper {
     background-image: url('/paperHome.svg'), url('/dustHome.svg');
-    height: max-content;
 }
 
 /* register button */
@@ -40,7 +44,6 @@
     height: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 7vh;
     overflow: hidden;
     border: 1px solid #000;
     font-weight: 300;
