@@ -3,6 +3,7 @@ import styles from './home.module.css'
 import Image from 'next/image'
 import Footer from '../components/Footer'
 import Sidebar from '../components/Sidebar'
+import Link from 'next/link'
 
 const Homepage = () => {
   return (
@@ -70,7 +71,7 @@ const Homepage = () => {
                     </div>
                 </div>
               </div>
-              <div className="blog__section layout">
+              <div className="blog__section layout flex flex-col gap-4">
                 <div className="section__title h-auto w-auto flex justify-center items-center">
                     <Image
                         src="/blogtitle.svg"
@@ -79,11 +80,43 @@ const Homepage = () => {
                         width={229.45}
                     />
                 </div>
-                <div className="blogg">
-                    <div></div>
-                    <div></div>
+                <div className="blogg flex flex-col md:flex-row justify-between w-full">
+                    <div className="blog__text font-montserrat text-MUN-englishViolet md:w-1/2">
+                        <p className="hidden sm:flex text-xs">Written by Bayu Prayogo</p>
+                        <div className="flex flex-row justify-center sm:justify-between">
+                            <h1 className="font-bold text-[13vw] md:text-[3.8vw]">MUN 101</h1>
+                            <Image
+                                src="/starasset.svg"
+                                alt="star"
+                                height={49.25}
+                                width={42.55}
+                                className="h-auto w-auto hidden sm:flex"
+                            />
+                        </div>
+                        <p className="text-[4vw] md:text-[1.6vw] text-justify">For almost 3 years ITS MUN Club has been found, many of them turned their backs away because “MUN is complicated.” Well, for this reason, we have gathered our three years worth of knowledge to provide everything you need to know about MUN in “MUN 101” article.</p>
+                        <div className="flex items-center justify-center md:justify-start w-auto text-MUN-sidebar-linen font-montserrat py-4">
+                            <Link href="/mun-101" passHref>
+                                <button className="hidden bg-MUN-solidPink sm:flex group text-md md:text-[1.6vw] px-3 py-2 items-center justify-center rounded-full duration-300 ease-in-out whitespace-nowrap">
+                                    Curious?
+                                    <span className="flex items-center group-hover:pl-3 justify-center opacity-0 group-hover:opacity-100 group-hover:translate-x-0 -translate-x-3 duration-300 ease-in-out">
+                                    See here!
+                                    </span>
+                                </button>
+                                <button className="flex bg-MUN-solidPink sm:hidden dark:text-dark-text dark:border-dark-accent group text-sm px-6 py-4 items-center justify-center rounded-full duration-300 ease-in-out">See here!</button>
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="h-auto w-auto md:w-1/2 flex justify-center items-center">
+                        <Image
+                            src="/mun101pic.png"
+                            alt="mun101"
+                            height={276}
+                            width={490}
+                        />
+                    </div>
                 </div>
               </div>
+              <div className="faq__section"></div>
             </div>
       </div>
       <Footer /></>
