@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const Sidebar = () => {
   return (
-    <div className='fixed z-50 flex flex-col justify-between bg-MUN-englishViolet w-fit h-[95%] px-5 py-10 rounded-3xl m-5 '>
+    <div className='hidden fixed z-50 md:flex flex-col justify-between bg-MUN-englishViolet w-fit h-[95%] px-5 py-10 rounded-3xl m-5 '>
       <div className='flex flex-col gap-5 items-center'>
         <Link href="/">
           <Image

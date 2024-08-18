@@ -1,0 +1,53 @@
+.bgPaper {
+    background-image: url('/paperland.svg'), url('/dustland.svg'), url('/lineland.svg');
+}
+
+.revealwrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Hide anything outside the container */
+  }
+  
+  .revealcontent {
+    position: relative;
+    display: inline-block;
+    background-color: #FFECD3;
+    padding: 0 0.5em; /* Adjust padding to fit the text */
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.75);
+    color: transparent; /* Hide the actual text initially */
+    background: linear-gradient(to right, #FFECD3 0%, #FFECD3 100%); /* Set background gradient */
+    background-size: 0% 100%; /* Start with the background at 0% width */
+    background-clip: text; /* Clip the background to the text */
+    animation: reveal-animation 1.2s ease-out both; /* Apply animation */
+  }
+  
+  @keyframes reveal-animation {
+    from {
+      background-size: 0% 100%; /* Start with background clipped to the left */
+    }
+    to {
+      background-size: 100% 100%; /* Expand to full width */
+      color: #000; /* Reveal text color */
+    }
+  }
+
+  .landingPage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #F3E1D1; /* Or whatever your background is */
+    z-index: 10;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slideUp {
+    transform: translateY(-100%);
+  }
+  
+  .homePage {
+    position: relative;
+    z-index: 1; /* Adjust this to align the home page under the landing page */
+  }
+  
