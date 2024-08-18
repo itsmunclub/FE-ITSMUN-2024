@@ -109,3 +109,15 @@ main {
     text-wrap: balance;
   }
 }
+
+.accordion-content {
+  transition: max-height 0.5s ease-out;
+}
+
+.accordion-active {
+  background-color: #f3f4f6; /* Adjust color as needed */
+}
+
+.bgFooter {
+  background-image: url('/footerDust.svg');
+}
