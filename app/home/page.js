@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from './home.module.css'
 import Image from 'next/image'
-import Footer from '../components/Footer'
+import FooterHome from '../components/FooterHome'
 import Sidebar from '../components/Sidebar'
 import Link from 'next/link'
+import FAQ from '../components/Faq'
 
 const Homepage = () => {
   return (
@@ -116,10 +117,45 @@ const Homepage = () => {
                     </div>
                 </div>
               </div>
-              <div className="faq__section"></div>
+              <div className="faq__section layout flex flex-col gap-4">
+                <div className="flex justify-center items-center">
+                    <Image
+                        src="/faqtitle.svg"
+                        alt="faq"
+                        height={92.3}
+                        width={196}
+                        className="h-auto w-auto"
+                    />
+                </div>
+                <FAQ/>
+              </div>
+              <div className="collab__section bg-MUN-englishViolet">
+                <div className="layout flex flex-row justify-between">
+                    <div className="collab__text flex flex-col justify-center items-center gap-6 py-3 md:py-0">
+                        <div>
+                            <h1 className="font-spritz text-[11.7vw] md:text-[4.7vw] text-MUN-sidebar-linen text-left w-full">Collaborate.</h1>
+                            <h2 className="font-montserrat text-[4.56vw] md:text-[1.56vw] text-MUN-sidebar-linen">Have an idea to build something with us? Hit us up!</h2>
+                        </div>
+                        <div className="w-full flex self-start">
+                            <a href="mailto:itsmunclub2024@gmail.com?subject=Request for Collaboration" className="flex items-center justify-center md:justify-start input w-3/4 md:w-fit py-1 px-4 max-w-xl text-white rounded-xl bg-MUN-burntSienna focus:ring-[#9BA3B1] focus:ring-1 focus:scale-105" style={{ boxShadow: '4px 4px 0px rgba(0, 0, 0, 1)' }}>
+                                <p className="hidden md:flex font-montserrat text-white text-[1.56vw]">Click here to collaborate with ITS MUN Club</p>
+                                <p className="flex md:hidden text-center justify-center items-center font-montserrat text-white">Collaborate with us</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div className="collab__img h-auto w-auto hidden md:flex">
+                        <Image
+                            src="/collabPic.svg"
+                            alt="collaboration"
+                            height={308.91}
+                            width={479.08}
+                        />
+                    </div>
+                </div>
+              </div>
             </div>
       </div>
-      <Footer /></>
+      <FooterHome /></>
   )
 }
 
