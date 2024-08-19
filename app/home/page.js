@@ -8,7 +8,9 @@ import FAQ from '../components/Faq'
 
 const Homepage = () => {
   return (
-        <><Sidebar />
+        <>
+        <title>ITS MUN 2024</title>
+        <Sidebar />
         <div className={`${styles.bgPaper} bg-MUN-bg-light`}>
             <div className="flex flex-col justify-center gap-[3vw]">
               <div className='hero__section layout md:pt-[0.6vw]'>

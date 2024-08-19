@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 const EventPage = () => {
     return (
         <>
+        <title>Events | ITS MUN 2024</title>
             <Sidebar/>
             <div className={`${styles.bgPaper} bg-cover`}>
                 <div className="flex flex-col justify-center gap-[3vw]">
