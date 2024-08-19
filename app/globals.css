@@ -121,3 +121,13 @@ main {
 .bgFooter {
   background-image: url('/footerDust.svg');
 }
+
+.card__bottom {
+  background-image: url('/events/bgCardbottom.svg');
+}
+
+.card__top {
+  background-image: url('/events/cardTop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

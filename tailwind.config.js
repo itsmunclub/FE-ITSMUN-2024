@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        '4/7': '57.142857%', // 4 / 7 as a percentage
+        '3/7': '42.857143%', // 3 / 7 as a percentage
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -83,5 +87,6 @@ module.exports = {
   },
   plugins: [
     require('tailwindcss-text-stroke'),
+    require('@tailwindcss/typography'),
   ],
 };
