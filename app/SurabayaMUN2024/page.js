@@ -2,9 +2,12 @@ import React from 'react'
 import styles from './SurabayaMUN2024.module.css'
 import Image from 'next/image'
 import FooterSumun from '../components/FooterSumun'
+import Aos from '../components/Aos'
 
 const Sumun = () => {
   return (
+    <Aos>
+    <title>Surabaya MUN 2024 | ITS MUN 2024</title>
       <div className={`${styles.bgAll}`}>
         <div className="bg-[url('/sumun/sumunHero.svg')] bg-cover xl:bg-cover md:bg-center bg-left bg-no-repeat hero flex flex-col md:pl-36 md:pr-12 sm:pl-14 pl-8 pr-4">
           <div className="hero__content flex md:h-[560px] lg:h-[750px] xl:h-[930px] xxl:h-[1050px] h-screen">
@@ -47,7 +50,7 @@ const Sumun = () => {
                   priority={false}
                 />
               </div>
-              <div className="title__pict h-auto w-auto flex md:flex-row flex-col justify-center">
+              <div data-aos="flip-up" className="title__pict h-auto w-auto flex md:flex-row flex-col justify-center">
                 <div className="h-auto w-auto md:w-1/2 flex items-center justify-center">
                   <p className={`${styles.themeText} font-inter font-extrabold italic text-white md:text-left text-center`}>“Disruptive Innovation, Constructive Collaboration: Embracing Emerging Technologies for Preserving the Heritage”</p>
                 </div>
@@ -120,7 +123,7 @@ const Sumun = () => {
                 </div>
               </div>
               <div className="council__bottom">
-                <div className="clutterPaper h-auto w-auto flex justify-end mt-[-7vw] md:mt-[-3.5vw]">
+                <div data-aos="fade-left" className="clutterPaper h-auto w-auto flex justify-end mt-[-7vw] md:mt-[-3.5vw]">
                   <div className="h-auto w-[60vw] xxl:w-[50vw]">
                     <Image
                       src="/sumun/paperClutter.svg"
@@ -133,7 +136,7 @@ const Sumun = () => {
                 </div>
                 <div className={`${styles.council__paper}`}>
                   <div className="layout flex flex-col md:gap-20 lg:gap-7">
-                    <div className="h-auto w-auto flex justify-center xl:mt-28">
+                    <div data-aos="fade-down" className="h-auto w-auto flex justify-center xl:mt-28">
                       <Image
                         src="/sumun/HAMDALAHUNEP.png"
                         alt="unep"
@@ -142,7 +145,7 @@ const Sumun = () => {
                         priority={true}
                       />
                     </div>
-                    <div className="h-auto w-auto flex justify-center xl:mt-16 xxl:mt-32">
+                    <div data-aos="fade-down" className="h-auto w-auto flex justify-center xl:mt-16 xxl:mt-32">
                       <Image
                         src="/sumun/finallyunesco.png"
                         alt="unesco"
@@ -151,7 +154,7 @@ const Sumun = () => {
                         priority={true}
                       />
                     </div>
-                    <div className="h-auto w-auto flex justify-center xl:mt-28 md:mt-1 mt-none mt-10 xxl:mt-52">
+                    <div data-aos="fade-down" className="h-auto w-auto flex justify-center xl:mt-28 md:mt-1 mt-none mt-10 xxl:mt-52">
                       <Image
                         src="/sumun/HAMDALAH-UNCSTD.png"
                         alt="uncstd"
@@ -160,7 +163,7 @@ const Sumun = () => {
                         priority={true}
                       />
                     </div>
-                    <div className="h-auto w-auto flex justify-center xl:mt-24 md:mt-1 mt-6 xxl:mt-52">
+                    <div data-aos="fade-down" className="h-auto w-auto flex justify-center xl:mt-24 md:mt-1 mt-6 xxl:mt-52">
                       <Image
                         src="/sumun/HAMDALAHUNTOURISM.png"
                         alt="untourism"
@@ -169,7 +172,7 @@ const Sumun = () => {
                         priority={true}
                       />
                     </div>
-                    <div className="flex flex-row mt-[7vw] md:mt-0 lg:mt-[7vw] xl:h-[35vw] xxl:h-[60vw] lg:h-[32vw] md:h-[30vw] gap-12 md:gap-4 lg:gap-12">
+                    <div data-aos="fade-up" className="flex flex-row mt-[7vw] md:mt-0 lg:mt-[7vw] xl:h-[35vw] xxl:h-[60vw] lg:h-[32vw] md:h-[30vw] gap-12 md:gap-4 lg:gap-12">
                       <div className="w-1/2 xxl:flex xxl:self-center">
                         <div className="transform rotate-min-15.4 flex justify-center md:justify-start lg:justify-center xl:pt-[8vw] xxl:pt-[18vw] xl:pl-[3vw] xxl:pl-[8vw] md:bg-transparent bg-white bg-opacity-80 h-[20vw] items-center rounded-md">
                           <p className="font-frankRuhlLibre font-bold text-[5vw]">
@@ -191,6 +194,7 @@ const Sumun = () => {
           </div>
         </div>
       </div>
+    </Aos>
   )
 }
 

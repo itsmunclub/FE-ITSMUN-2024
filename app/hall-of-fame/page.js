@@ -8,6 +8,7 @@ import Aos from '../components/Aos'
 const HallOfFamePage = () => {
   return (
     <Aos>
+      <title>Hall of Fame | ITS MUN 2024</title>
       <Sidebar/>
       <div className={`${styles.bgPaper}`}>
         <div className="layout">

@@ -8,6 +8,7 @@ import Aos from '../components/Aos'
 const BlogPage = () => {
   return (
     <Aos>
+      <title>Blog | ITS MUN 2024</title>
       <Sidebar/>
       <div className={`${styles.bgPaper}`}>
         <div className="layout">
