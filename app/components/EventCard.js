@@ -183,7 +183,7 @@ const EventCard = () => {
                         </tbody>
                     </table>
                     <div className="flex justify-center items-center">
-                        <a className="flex justify-center items-center bg-MUN-solidPink p-2 w-[55%]" href="https://its.id/m/SUMUN2024RegularBird">
+                        <a className="flex justify-center items-center bg-MUN-solidPink p-2 w-[55%]" href="https://itsmunclub.online/SurabayaMUN2024">
                             <div className="bg-MUN-solidPink border border-MUN-deepChampagne-100 w-full">
                                 <p className="font-montserrat font-semibold text-MUN-sidebar-linen text-center">Details</p>
                             </div>
