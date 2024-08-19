@@ -10,7 +10,7 @@ const Sumun = () => {
     <title>Surabaya MUN 2024 | ITS MUN 2024</title>
       <div className={`${styles.bgAll}`}>
         <div className="bg-[url('/sumun/sumunHero.svg')] bg-cover xl:bg-cover md:bg-center bg-left bg-no-repeat hero flex flex-col md:pl-36 md:pr-12 sm:pl-14 pl-8 pr-4">
-          <div className="hero__content flex md:h-[560px] lg:h-[750px] xl:h-[930px] xxl:h-[1050px] h-screen">
+          <div className="hero__content flex md:h-[560px] lg:h-[750px] xl:h-[930px] xxl:h-[1054px] h-screen">
             <div className="content__main flex flex-row">
               <div className="content__text md:pt-[68px] md:pl-5 pt-[45px] flex flex-shrink flex-col w-auto h-auto">
                 <div className="flex flex-row items-center md:gap-4 gap-2">
@@ -50,11 +50,11 @@ const Sumun = () => {
                   priority={false}
                 />
               </div>
-              <div data-aos="flip-up" className="title__pict h-auto w-auto flex md:flex-row flex-col justify-center">
-                <div className="h-auto w-auto md:w-1/2 flex items-center justify-center">
+              <div className="title__pict h-auto w-auto flex md:flex-row flex-col justify-center">
+                <div data-aos="fade-right" className="h-auto w-auto md:w-1/2 flex items-center justify-center">
                   <p className={`${styles.themeText} font-inter font-extrabold italic text-white md:text-left text-center`}>“Disruptive Innovation, Constructive Collaboration: Embracing Emerging Technologies for Preserving the Heritage”</p>
                 </div>
-                <div className="h-auto w-auto md:w-1/2 flex items-center justify-center">
+                <div data-aos="fade-right" className="h-auto w-auto md:w-1/2 flex items-center justify-center">
                   <Image
                     src="/sumun/themePict.svg"
                     alt="sura&baya cutout"
@@ -123,7 +123,7 @@ const Sumun = () => {
                 </div>
               </div>
               <div className="council__bottom">
-                <div data-aos="fade-left" className="clutterPaper h-auto w-auto flex justify-end mt-[-7vw] md:mt-[-3.5vw]">
+                <div className="clutterPaper h-auto w-auto flex justify-end mt-[-7vw] md:mt-[-3.5vw]">
                   <div className="h-auto w-[60vw] xxl:w-[50vw]">
                     <Image
                       src="/sumun/paperClutter.svg"
